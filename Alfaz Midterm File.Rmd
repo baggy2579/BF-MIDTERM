@@ -236,7 +236,7 @@ sales_hw <- HoltWinters(ts_sales, seasonal = "additive")
 sales_hw_forecast <- forecast(sales_hw, h = 12)
 plot(sales_hw_forecast, main = "Holt-Winters Forecast for Next 12 Months")
 
-summary(sales_hw)
+summary(sales_hw_forecast)
 # Explanation of Holt-Winters Model Parameters and Output:
 # Alpha : Controls the smoothing of the level. Higher alpha makes the forecast more responsive to recent changes.
 # Beta : Adjusts the trend's smoothness. Higher beta values make the trend more sensitive to recent data.
